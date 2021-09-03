@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Assessment </title>
+    <link rel="stylesheet" type="text/css"  href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+    <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="logo.jpeg" alt="logo">
+        </div>
+        <div id="navigationbar">
+            <ul>
+               <li><a href="userassess.html" class="current">HOME</a></li>
+               <li><a href="userassess.html">PROFILE</a></li>
+                <li><a href="login.html">LOGOUT</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="heading">
+            <h1>Welcome to InstaCheck</h1>
+             <p>
+                 We are Your Online Doctor and provide a general symptom assessment.
+             </p>
+        </div>
+        <div id="chatbot">
+            <div class="bot">
+                <p class="text"> 
+                    Hello! <br> I can help you find out what's going on. <br> Just start a symptom assessment.
+                </p>
+            </div>
+            <div class="user" id="startbtn">
+                <button>Start Symptom Assessment</button>
+            </div>
+
+            <div class="bot asksym" style="display: none;">
+                <p class="text"> 
+                    Let's start with the symptom that's troubling you the most. 
+                </p>
+            </div>
+
+            <div class="user asksym" style="display: none;">
+                <input type="text" id="sympinput" placeholder="e.g.headache">
+            </div>
+
+            <!-- <div class="user">
+                <section class="diagtext">
+                    <p>Issue : Food Poising</p>
+                    <p>Possible Reason : Foodborne illness</p>
+                    <p>Accuracy : 90%</p>
+                </section>
+                <section class="diagtext">
+                    <p>Sick headache</p>
+                    <p>Possible Reason : Migraine</p>
+                    <p>Accuracy : 43.2%</p>
+                </section>
+            </div> -->
+        </div>
+    </main>
+</body>
+<script src="userapi.js"></script>
+</html>

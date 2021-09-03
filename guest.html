@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Guest Assessment</title>
+    <link rel="stylesheet" type="text/css"  href="style.css"> 
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Condensed:wght@700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Open+Sans:400,700" rel='stylesheet' type='text/css'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@300&display=swap" rel="stylesheet">
+<link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
+</head>
+<body>
+    <header>
+        <div id="logo">
+            <img src="logo.jpeg" alt="logo">
+        </div>
+        <div id="navigationbar">
+            <ul>
+               <li><a href="guestassess.html" class="current">ASSESSMENT</a></li>
+                <li><a href="login.html" >LOG IN</a></li>
+            </ul>
+        </div>
+    </header>
+
+    <main>
+        <div id="heading">
+            <h1>Welcome to InstaCheck</h1>
+             <p>
+                 We are Your Online Doctor and provide a general symptom assessment.
+             </p>
+        </div>
+        <div id="chatbot">
+            <div class="bot">
+                <p class="text"> 
+                    Hi Guest! <br> I can help you find out what's going on. <br> Just start a symptom assessment.
+                </p>
+            </div>
+            <div class="user">
+                <button class="btn " id="startbtn">Start Symptom Assessment</button>
+            </div>
+            <div class="bot askgender" style="display: none;">
+                <p class="text"> 
+                    Can you specify your Gender.
+                </p>
+            </div>
+            <div class="user askgender" id="gender" style="display: none;">
+                <label class="btn genbtn" for="male">
+                    <input type="radio" id="male" name="gender">
+                    <span>Male</span>
+                </label> 
+                <label class="btn genbtn" for="female">
+                    <input type="radio" id="female" name="gender">
+                    <span>Female</span>
+                </label> 
+                <label class="btn genbtn" for="other">
+                    <input type="radio" id="other" name="gender">
+                    <span>Other</span>
+                </label> 
+            </div>
+
+            <div class="bot askage" style="display: none;">
+                <p class="text"> 
+                    Can you specify your Age.
+                </p>
+            </div>
+
+            <div class="user askage" id="age" style="display: none;">
+                <label class="btn agebtn" for="younger">
+                    <input type="radio" id="younger" name="age">
+                    <span>0 - 17 Years</span>
+                </label> 
+                <label class="btn agebtn" for="adult">
+                    <input type="radio" id="adult" name="age">
+                    <span>18 - 50 Years</span>
+                </label> 
+                <label class="btn agebtn" for="older">
+                    <input type="radio" id="older" name="age">
+                    <span>More than 50 Years</span>
+                </label> 
+            </div>
+
+            <div class="bot asksym" style="display: none;">
+                <p class="text"> 
+                    Let's start with the symptom that's troubling you the most. 
+                </p>
+            </div>
+
+            <div class="user asksym" style="display: none;">
+                <input type="text" id="sympinput" placeholder="e.g.headache">
+            </div>
+        </div>
+    </main>
+</body>
+<script src="guestapi.js"></script>
+
+</html>

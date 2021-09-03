@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="register.css">
+    <link rel="shortcut icon" href="logo.jpeg" type="image/x-icon">
+    <title>Register</title>
+</head>
+
+<body>
+    <div class="container">
+        <h1>Register</h1>
+        <form action="#">
+            <section>
+                <label for="name">Name : </label>
+                <input type="text" id="name" placeholder="Ex.John" align="right" />
+            </section>
+            <section>
+                <label for="email">Email : </label>
+                <input type="email" id="email" placeholder="Ex.abc@gmail.com" />
+            </section>
+            <section>
+                <label for="age">Age : </label>
+                <input type="number" id="age" placeholder="25" style="width: 20%;" />
+            </section>
+            <section>
+                <label for="height">Height : </label>
+                <input type="number" id="height" placeholder="165" style="width: 20%;" />
+                <label for="height">cm</label>
+            </section>
+            <section>
+                <label for="height">Weight : </label>
+                <input type="number" id="weight" placeholder="60" style="width: 20%;" />
+                <label for="height">kg</label>
+            </section>
+            <!-- <section>
+                <p class="gendertag">Gender</p>
+                <div class="radiobutton">
+                    <label for="male"><input type="radio" id="male" name="gender" value="male">Male</label>
+                    <label for="female"></label><input type="radio" id="female" name="gender"
+                        value="female">Female</label>
+                    <label for="others"></label><input type="radio" id="others" name="gender"
+                        value="others">Others</label>
+                </div>
+            </section> -->
+            <section id="gender">
+                <label for="gender">Gender : </label>
+                <input type="radio" name="gender" value="male"> Male<br>
+                <input type="radio" name="gender" value="female"> Female<br>
+                <input type="radio" name="gender" value="other"> Other
+            </section>
+            <section>
+                <label for="pwd">Password : </label>
+                <input type="password" id="pwd" />
+            </section>
+            <section>
+                <label for="cnfpwd">Confirm Password : </label>
+                <input type="password" id="cnfpwd" />
+            </section>
+            <button>Create Account</button>
+        </form>
+    </div>
+</body>
+
+</html>
